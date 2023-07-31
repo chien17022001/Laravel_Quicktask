@@ -12,4 +12,7 @@ return [
     'confirm_password' => 'Confirm Password',
     'registered' => 'Already registered?',
     'register'=> 'Register',
+    'dashboard'=> 'Dashboard',
+    'user'=> 'User',
+    'log_out'=> 'Log Out'
 ];
