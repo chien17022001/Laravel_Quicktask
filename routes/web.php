@@ -11,7 +11,7 @@ Route::get('/', function () {
 });
 
 
-Route::resource('user', UserController::class);
+Route::resource('user', UserController::class)->middleware('admin');
 
 Route::controller(TaskController::class)->group(function(){
     Route::get('/task','index')->name('task.index');
