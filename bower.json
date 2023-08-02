@@ -1,0 +1,21 @@
+{
+  "name": "Laravel_Quicktask",
+  "description": "",
+  "main": "",
+  "authors": [
+    "admin <chiencn05@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/chien17022001/Laravel_Quicktask",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "resources/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "laravel-ui": "https://github.com/chien17022001/laravel-ui.git#main"
+  }
+}
