@@ -24,26 +24,30 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <?php $i=1  ?>
+                            @foreach ( $alluser as $user )
                             <tr class="tr-shadow">
-                                <td>1</td>
-                                <td><a href="{{ route('task.show') }}">Lori Lynch</a></td>
+                                <td>{{ $i++ }}</td>
+                                <td><a href="">{{ $user->first_name .' '. $user->last_name }}</a></td>
                                 <td>
-                                    <span class="block-email">lori@example.com</span>
+                                    <span class="block-email">{{ $user -> email }}</span>
                                 </td>
-                                <td class="text"></td>
+                                <td class="text">{{ $user -> is_admin ? 'Admin' : 'User' }}</td>
                                 <td>
                                     <div class="table-data-feature">
 
                                         <button class="item" data-toggle="tooltip" data-placement="top" title="Edit">
-                                            <i class="zmdi zmdi-edit"></i>
+                                            <a href=""><i class="zmdi zmdi-edit"></i></a>
                                         </button>
                                         <button class="item" data-toggle="tooltip" data-placement="top" title="Delete">
-                                            <i class="zmdi zmdi-delete"></i>
+                                            <a href="{{ route('delete', $user -> id) }}"><i class="zmdi zmdi-delete"></i></a>
                                         </button>
 
                                     </div>
                                 </td>
                             </tr>
+                            @endforeach
+
                             <tr class="spacer"></tr>
 
                         </tbody>

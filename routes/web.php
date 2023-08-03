@@ -9,8 +9,16 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('users');
 });
+
+Route::controller(UserController::class)->group(function(){
+    Route::get('/admin/alluser', 'index')->name('user');
+    Route::get('/admin/delete-user/{id}', 'destroy')->name('delete');
+    Route::get('/admin/edit-user/{id}','edit')->name('edit');
+
+});
+
 
 
 Route::resource('user', UserController::class)->middleware('admin');

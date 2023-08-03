@@ -97,7 +97,7 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
-                            <a class="js-arrow" href="{{ route('') }}">
+                            <a class="js-arrow" href="{{ route('user') }}">
                                 <i class="zmdi zmdi-account"></i>User</a>
                         </li>
 
