@@ -12,4 +12,7 @@ return [
     'confirm_password' => 'Xác nhận mật khẩu',
     'registered' => 'Đã có tài khoản?',
     'register'=> 'Đăng ký',
+    'dashboard'=> 'Bảng điều khuyển',
+    'user'=> 'Người dùng',
+    'log_out'=> 'Đăng xuất'
 ];
